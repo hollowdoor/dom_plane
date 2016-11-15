@@ -30,7 +30,7 @@ export function getClientRect(el){
         try{
             let rect = el.getBoundingClientRect();
             if(rect.x === undefined){
-                rext.x = rect.left;
+                rect.x = rect.left;
                 rect.y = rect.top;
             }
             return rect;

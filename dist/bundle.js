@@ -4,7 +4,7 @@ Object.defineProperty(exports, '__esModule', { value: true });
 
 function _interopDefault (ex) { return (ex && (typeof ex === 'object') && 'default' in ex) ? ex['default'] : ex; }
 
-var createPointCB = _interopDefault(require('create-point-cb'));
+var createPointCb = _interopDefault(require('create-point-cb'));
 
 function createWindowRect() {
     var props = {
@@ -34,7 +34,7 @@ function getClientRect(el) {
         try {
             var rect = el.getBoundingClientRect();
             if (rect.x === undefined) {
-                rext.x = rect.left;
+                rect.x = rect.left;
                 rect.y = rect.top;
             }
             return rect;
@@ -49,7 +49,7 @@ function pointInside(point, el) {
     return point.y > rect.top && point.y < rect.bottom && point.x > rect.left && point.x < rect.right;
 }
 
-exports.createPointCB = createPointCB;
+exports.createPointCB = createPointCb;
 exports.getClientRect = getClientRect;
 exports.pointInside = pointInside;
 //# sourceMappingURL=bundle.js.map
